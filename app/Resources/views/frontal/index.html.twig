@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Bar Juan
+{% endblock %}
+
+{% block body %}
+    {% for tapa in tapas %}
+        <h2>{{ tapa.nombre }}</h2>
+        <p>{{ tapa.descripcion }}</p>
+    {% endfor %}
+{% endblock %}
